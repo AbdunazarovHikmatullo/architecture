@@ -19,14 +19,4 @@ python "$BACKEND/manage.py" migrate --noinput
 echo ">>> Сборка статических файлов..."
 python "$BACKEND/manage.py" collectstatic --noinput
 
-# ── 4. Gunicorn ───────────────────────────────────────────────────
-HOST="${HOST:-0.0.0.0}"
-PORT="${PORT:-8000}"
-
-echo ">>> Запуск Gunicorn на $HOST:$PORT..."
-exec gunicorn backend.wsgi:application \
-    --chdir "$BACKEND" \
-    --bind "$HOST:$PORT" \
-    --workers 1 \
-    --access-logfile - \
-    --error-logfile -
+echo ">>> Build завершён."
