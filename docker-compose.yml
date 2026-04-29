@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - sqlite_data:/app/db.sqlite3
+    environment:
+      - DEBUG=True
+      - SECRET_KEY=django-insecure-ds&jnf12+^!72-^a!dlm_nr#3!*sd!56ac-lrp^yc20k27k8l#
+    restart: unless-stopped
+
+volumes:
+  sqlite_data:
