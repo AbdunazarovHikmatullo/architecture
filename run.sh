@@ -22,12 +22,11 @@ python "$BACKEND/manage.py" collectstatic --noinput
 # ── 4. Gunicorn ───────────────────────────────────────────────────
 HOST="${HOST:-0.0.0.0}"
 PORT="${PORT:-8000}"
-WORKERS="${WORKERS:-3}"
 
-echo ">>> Запуск Gunicorn на $HOST:$PORT (workers: $WORKERS)..."
+echo ">>> Запуск Gunicorn на $HOST:$PORT..."
 exec gunicorn backend.wsgi:application \
     --chdir "$BACKEND" \
     --bind "$HOST:$PORT" \
-    --workers "$WORKERS" \
+    --workers 1 \
     --access-logfile - \
     --error-logfile -
