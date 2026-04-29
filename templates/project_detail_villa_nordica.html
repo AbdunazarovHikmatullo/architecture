@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% block html_class %}scroll-smooth{% endblock %}
+{% block body_class %}bg-surface selection:bg-primary-container selection:text-on-primary-container{% endblock %}
+
+{% block content %}
+<!-- TopNavBar Shell -->
+
+<main class="max-w-[1440px] mx-auto px-12 pt-12">
+<!-- Main Gallery Section -->
+<section class="relative">
+<div class="grid grid-cols-12 gap-8 items-start">
+<div class="col-span-12">
+<h1 class="font-display text-display mb-8">Villa Nordica</h1>
+</div>
+<!-- Main Image Cluster -->
+<div class="col-span-12 lg:col-span-8 space-y-6">
+<div class="relative aspect-[16/9] overflow-hidden bg-surface-container">
+<img alt="Villa Nordica Main View" class="w-full h-full object-cover" data-alt="Modern minimalist architectural villa with clean white lines and floor-to-ceiling windows set in a serene snowy Scandinavian landscape at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyr4CWFOsOb48Zk0ID9Q6clue954NTBlJvhsPsAYGVHRlMPNuwHBMUDxHrZiaaP7pu48b1nCr-mWqYasJ_H6zCVHQOCirHwvN-40ABMgsZJi8lWrAc7UByMxVQbBPFJ7snSrXqtiB3NGSslxfc8vtk0ynsmo40-p-RcYis3DhxJU3dQZOpH7bLZSzq8fQ_DMyQY7lCQrzwmLfgW3EGHjzvntFj_wg8Qe11vX5-A6JWN-qdWgTg816zZd4ajT1SVldKayYmHJEneIGb"/>
+<!-- Navigation Arrows -->
+<div class="absolute inset-0 flex items-center justify-between px-6 pointer-events-none">
+<button class="w-12 h-12 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full pointer-events-auto hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-white">chevron_left</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full pointer-events-auto hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-white">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Thumbnails -->
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-4">
+<div class="flex-shrink-0 w-32 aspect-square border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="Close-up architectural detail of Villa Nordica facade showing smooth white concrete and glass integration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY56fi1ZSw35_SfwxLzjv81RyYv5a6wzCbTow8qidpAUuvJEY2BQsns1SNudbm7wKjWpamch67ciz2FCKRnb0OKm8BJns9c5vRJu0nhDifUKWU-4xE-GkumQjUJ7dO1PsVSxNssiAQMnzIvOEoNyw0ZRMgv72TciA2NB4pFwOJ2RG_Xlw06p5vSXrU6FVz-KcaDBEiEjdPykrOqjO_1rprB65Guqx6bTaePWEAB7xitjuEXkQg9kUuRb6zQ5sPk5vZG8-peUzHTMEX"/>
+</div>
+<div class="flex-shrink-0 w-32 aspect-square opacity-60 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Interior of Villa Nordica showing a minimalist living room with warm wooden floors and expansive views of nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_crjuO6CKBm1A87hS1eqeqQh5Pfl_Yobk7RT-nofFr4EjGErTrfRWKfImseueYbldnLXcGNin37N9Jq6cQWeAbqiRXI4SvrCxpTWedBmEAaIu_GTtxZUvirUG6vqrzoRZtHy7dL7TTQSj_-6IqNtxqFLrJiyUHy6SS2u2ckzO0gb24i_F7YLOZWpc9QF32lpjYy-w0zICnTfbnF8C7iWC8OGUCBWHgPQI-JhnV8ksI8W8zFhpFsAANRfWA8Ky38fVdbgoGaQVg35H"/>
+</div>
+<div class="flex-shrink-0 w-32 aspect-square opacity-60 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Gourmet kitchen in Villa Nordica with matte black cabinetry and white marble countertops illuminated by soft recessed lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5kKIljsdxcnQCQh3JQCWR8hY12d8aNNmNRtcPKGELXTK9d8ckWEPNTda_GYlBtuAU9GF8egmuz4q72fFtcMQX-u8p2EqZuMhZVTiegq0P7JIkLXHy3dTSs_WzvTXoP1XnQVWXn2M9_cCWNd8qDl9mSEb2rgjsC3bDCztDtuPxloFZSCyhi_xGvp6XyjZYYaKG9mZ8q-BXhlgRbwqG8bcKBHA84d4XXt5h1CjXMlxdq6r4SO3nhO6vjriYqUsjbbFykiMRWZkxyzhj"/>
+</div>
+<div class="flex-shrink-0 w-32 aspect-square opacity-60 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Spacious bedroom in Villa Nordica with large windows framing a mountain forest view at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLs4vGmRcUD9nQwAuh2rL41-gPdOOnvyiaJu-CzaKmtC0wbKaod3_2EpPJXj9NDiN88Lo0mqeF03OTuHA_WfgsGgr-Nk25v0LHeWU581DmEAp-2jR9wqCtPzGaTKtGZu5zA3XK445ArQMzH-PzRMeS4K-vD4uM87fwrt2pIz-AR4OFnvjmDI7N53sYAN8NC61Mu-JN2YIw5zVRxQq-l5Os_BmlJeDTiq2O3Kuv0s_sSelylXSSpGrK0aiOhN6_Fl9thrAPvImy0Jgs"/>
+</div>
+</div>
+</div>
+<!-- Sticky Info Panel -->
+<div class="col-span-12 lg:col-span-4 sticky top-32">
+<div class="bg-surface-container-low p-10 border border-outline-variant/10">
+<div class="mb-10">
+<p class="font-label-caps text-secondary mb-2 uppercase">Current Listing</p>
+<h2 class="font-stats-num text-stats-num text-primary-container">$250,000</h2>
+</div>
+<div class="space-y-8 mb-12">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-outline" data-icon="square_foot">square_foot</span>
+<div>
+<p class="font-label-caps text-outline uppercase text-[10px]">Total Area</p>
+<p class="font-headline-md text-[20px]">150 m²</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-outline" data-icon="layers">layers</span>
+<div>
+<p class="font-label-caps text-outline uppercase text-[10px]">Structure</p>
+<p class="font-headline-md text-[20px]">2 Floors</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-outline" data-icon="bed">bed</span>
+<div>
+<p class="font-label-caps text-outline uppercase text-[10px]">Sleeping quarters</p>
+<p class="font-headline-md text-[20px]">3 Bedrooms</p>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full py-5 bg-[#6E2A1F] text-white font-label-caps tracking-widest hover:brightness-110 transition-all">
+                                INQUIRE NOW
+                            </button>
+<button class="w-full py-5 border border-outline text-on-surface font-label-caps tracking-widest flex items-center justify-center gap-3 hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_circle">add_circle</span>
+                                ADD TO COMPARISON
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Sub-Navigation -->
+<nav class="sticky top-[80px] z-40 bg-surface/90 backdrop-blur-md mt-section-gap border-b border-outline-variant/20">
+<div class="flex gap-12 py-6 overflow-x-auto hide-scrollbar">
+<a class="font-label-caps text-primary uppercase whitespace-nowrap border-b-2 border-primary-container pb-6 -mb-[2px]" href="#layout">Layout</a>
+<a class="font-label-caps text-outline uppercase whitespace-nowrap hover:text-primary transition-colors pb-6" href="#specs">Specs</a>
+<a class="font-label-caps text-outline uppercase whitespace-nowrap hover:text-primary transition-colors pb-6" href="#timeline">Timeline</a>
+<a class="font-label-caps text-outline uppercase whitespace-nowrap hover:text-primary transition-colors pb-6" href="#mortgage">Mortgage</a>
+</div>
+</nav>
+<!-- Layout Section -->
+<section class="py-[100px]" id="layout">
+<div class="grid grid-cols-12 gap-8 mb-16">
+<div class="col-span-12 md:col-span-6">
+<h2 class="font-headline-lg text-headline-lg mb-6">Structural Precision</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">Designed with a focus on open-plan living and seamless transitions between interior and exterior spaces. Every square meter is calculated for maximum airflow and natural light penetration.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-grid-gutter">
+<!-- Ground Floor -->
+<div class="bg-white p-12 flex flex-col items-center">
+<p class="font-label-caps text-outline mb-12 self-start">LEVEL 01 — GROUND FLOOR</p>
+<div class="w-full aspect-square relative flex items-center justify-center">
+<img alt="Floor Plan Level 1" class="max-h-full object-contain mix-blend-multiply opacity-80" data-alt="Clean architectural 2D floor plan drawing of a modern house showing living area, kitchen and terrace with minimalist black lines on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMsg9mJ7yjLF9bxYaQmq47E7HMMiIWJVqF3zxwho4U6jXTZRilOHfkv4LX-ESFC2XB1LNpuG5jEPLZRWV-McWdkPpKMSQDJWBCaWeoezF-NitW23Ag56dxO42wbtgxnbxUTpLCxfryvlp9BHlTYoyORjIsM5qlXQYrHAvz3gpim0It3hgDW-fCNQALHa6Z9RdN8vDNPZpma4uaWvkF8qIM3n9kZIjpIET0b3VDYYZ9f9EZ5Yq-LkI6kEj2VOQWCWV67RVgN-yA2VHv"/>
+</div>
+</div>
+<!-- First Floor -->
+<div class="bg-white p-12 flex flex-col items-center">
+<p class="font-label-caps text-outline mb-12 self-start">LEVEL 02 — UPPER FLOOR</p>
+<div class="w-full aspect-square relative flex items-center justify-center">
+<img alt="Floor Plan Level 2" class="max-h-full object-contain mix-blend-multiply opacity-80" data-alt="Detailed architectural blueprint of the second floor of a villa highlighting bedrooms and private balconies in clean black lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4PKXk5EjAsMpcXk20bgEcYGakjBDCNJtnDGEM-7poa0DxyLqGWaajEjoYbQ6zwUTCniGZcLgmdRokwBdYxpx2Cg6sVthXR4IEbBAMznDnWxhw1x2J6XEUDhhha2qiHYGTgwlThlc8YZ3b8cXH0Pn21rt6GXRGgwtZh_1lTH6w3gc2MWJdNCAH7QIUPySv3VJISgCbboeC1mw4QJPqPc94HasRKji3eKWi6sgvUBEIHDsaOEZgMV8Ljx5AChPp9t3yusORzm26wDb-"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs (Bento Style) -->
+<section class="py-section-gap" id="specs">
+<div class="grid grid-cols-12 gap-grid-gutter">
+<div class="col-span-12 lg:col-span-4">
+<h3 class="font-headline-md text-headline-md mb-8">Engineering Specs</h3>
+<div class="space-y-6">
+<div class="pb-6 border-b border-outline-variant/30 flex justify-between">
+<span class="font-label-caps text-secondary">Insulation</span>
+<span class="font-body-md font-medium">R-60 High-Efficiency</span>
+</div>
+<div class="pb-6 border-b border-outline-variant/30 flex justify-between">
+<span class="font-label-caps text-secondary">Glazing</span>
+<span class="font-body-md font-medium">Triple-pane Low-E</span>
+</div>
+<div class="pb-6 border-b border-outline-variant/30 flex justify-between">
+<span class="font-label-caps text-secondary">Heating</span>
+<span class="font-body-md font-medium">Geothermal Pump</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-8 grid grid-cols-2 gap-grid-gutter">
+<div class="bg-surface-container-highest p-8">
+<span class="material-symbols-outlined text-primary-container mb-6 text-3xl" data-icon="eco">eco</span>
+<h4 class="font-headline-md text-xl mb-4">Sustainability</h4>
+<p class="font-body-md text-secondary">Carbon-negative construction materials sourced from local sustainable forests.</p>
+</div>
+<div class="bg-surface-container-highest p-8">
+<span class="material-symbols-outlined text-primary-container mb-6 text-3xl" data-icon="nest_eco_leaf">nest_eco_leaf</span>
+<h4 class="font-headline-md text-xl mb-4">Smart Integration</h4>
+<p class="font-body-md text-secondary">Fully integrated home automation system for lighting, climate, and security.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+{% endblock content %}
+
+{% block footer %}
+<footer class="w-full mt-[160px] bg-[#0F3D2E] dark:bg-zinc-950 text-white">
+<div class="flex flex-col md:flex-row justify-between items-end px-12 py-16 w-full max-w-[1440px] mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="text-2xl font-black text-white mb-6">ARCHITECTURA</div>
+<p class="font-['Space_Grotesk'] text-[12px] tracking-[0.1em] uppercase text-white/60">© 2024 ARCHITECTURA PREMIER CONSTRUCTION. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-col items-end gap-4">
+<div class="flex gap-8">
+<a class="font-['Space_Grotesk'] text-[12px] tracking-[0.1em] uppercase text-white/60 hover:text-white transition-opacity duration-300" href="#">Privacy Policy</a>
+<a class="font-['Space_Grotesk'] text-[12px] tracking-[0.1em] uppercase text-white/60 hover:text-white transition-opacity duration-300" href="#">Terms of Service</a>
+<a class="font-['Space_Grotesk'] text-[12px] tracking-[0.1em] uppercase text-white/60 hover:text-white transition-opacity duration-300" href="#">Cookie Policy</a>
+</div>
+<div class="flex gap-6 mt-4">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-70" data-icon="share">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-70" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+</footer>
+{% endblock footer %}

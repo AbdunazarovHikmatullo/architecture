@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block body_class %}selection:bg-primary-fixed selection:text-on-primary-fixed{% endblock %}
+
+{% block content %}
+<!-- TopNavBar -->
+
+<!-- Main Content Canvas -->
+<main class="pt-40 pb-section-gap">
+<!-- Hero Article Header -->
+<header class="max-w-7xl mx-auto px-12 grid grid-cols-12 gap-grid-gutter mb-section-gap">
+<div class="col-span-12 md:col-span-8">
+<div class="font-label-caps text-label-caps text-on-primary-container mb-unit flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px]">architecture</span>
+                    TECHNICAL SPECIFICATIONS / 01
+                </div>
+<h1 class="font-display text-display text-primary mb-8">Understanding Volumetric Space</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+                    In high-end architectural engineering, the definition of 'area' transcends simple floor measurements. We examine the precision behind Gross Floor Area (GFA), Plot Ratios, and the calculation of livable volume.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-4 flex flex-col justify-end items-end border-l border-outline-variant pl-grid-gutter">
+<div class="font-label-caps text-label-caps text-zinc-400 mb-2">LAST UPDATED</div>
+<div class="font-stats-num text-[24px] text-primary">OCT 2024</div>
+</div>
+</header>
+<!-- Technical Diagram Section (Bento Style) -->
+<section class="max-w-7xl mx-auto px-12 grid grid-cols-12 gap-grid-gutter mb-section-gap">
+<div class="col-span-12 md:col-span-7 bg-surface-container h-[500px] relative overflow-hidden flex items-center justify-center border border-outline-variant">
+<div class="absolute inset-0 grid-guide opacity-40"></div>
+<!-- Mock Diagram Representation -->
+<div class="relative w-3/4 h-3/4 border-2 border-primary-container/30 flex items-center justify-center">
+<div class="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-primary"></div>
+<div class="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-primary"></div>
+<img class="w-full h-full object-cover grayscale opacity-20 contrast-125" data-alt="abstract architectural blueprint showing 3D wireframe of a minimalist house with technical annotations and grid lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-9ov9smeacyBpT-hpxCoZpl4qGxfOZjhlC20LKvUsDszN3yX6qVqJgtNYgEHRNzYz0leOig-zcnJjeO7GPdRBKXS5ki0JwGlzOLuokz9BpP7msi384ElKkC1KpfOcVzji5SvpWzgyl9S5l3xrp7xBGy6rF27JsTnbKUv8eGQB0wtRcUI8oP0wFhHJJbiwrPFijZWYHSsWUvYbbKHtIcJfOVTT0dc2BsZGzDsWyKu1NRR4UQ3qtveEh3B8Kj-i8eK_62FPlh5-vtkf"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<div class="bg-primary text-white px-4 py-2 font-label-caps text-label-caps mb-4">GROSS AREA (GFA)</div>
+<div class="w-1/2 h-[1px] bg-primary mb-4"></div>
+<div class="text-primary font-stats-num text-[32px]">1,250 M²</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 flex flex-col gap-grid-gutter">
+<div class="p-8 bg-surface-container-low border border-outline-variant flex-1">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Defined Boundaries</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                        The distinction between "Total Area" and "Livable Area" is the primary source of variance in construction valuations. 
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-body-md">External wall thickness integration</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-body-md">Vertical penetration voids (Stairs/Elevators)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-body-md">Covered exterior threshold logic</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Terminology Cards -->
+<section class="max-w-7xl mx-auto px-12 mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Standard Definitions</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter">
+<!-- Card 1 -->
+<div class="group border-b border-outline-variant pb-12">
+<div class="font-stats-num text-on-primary-container mb-4 opacity-50">01</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Building Footprint</h4>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                        The area of the site covered by the structure at ground level, including projections but excluding eaves and minor landscaping.
+                    </p>
+<div class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps group-hover:gap-4 transition-all cursor-pointer">
+                        ENGINEERING SPECS <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group border-b border-outline-variant pb-12">
+<div class="font-stats-num text-on-primary-container mb-4 opacity-50">02</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Net Internal Area</h4>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                        The usable space within the internal face of the perimeter walls. Does not include structural columns or internal partitions.
+                    </p>
+<div class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps group-hover:gap-4 transition-all cursor-pointer">
+                        CALCULATION SHEET <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group border-b border-outline-variant pb-12">
+<div class="font-stats-num text-on-primary-container mb-4 opacity-50">03</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Floor Space Ratio</h4>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                        The ratio of a building's total floor area (GFA) to the size of the piece of land upon which it is built.
+                    </p>
+<div class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps group-hover:gap-4 transition-all cursor-pointer">
+                        ZONING LAWS <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Article Content -->
+<section class="max-w-7xl mx-auto px-12 grid grid-cols-12 gap-grid-gutter items-start">
+<aside class="col-span-12 md:col-span-3 sticky top-32 mb-12">
+<div class="space-y-6">
+<div class="border-l-2 border-primary pl-4">
+<span class="font-label-caps text-label-caps text-primary block">PART I</span>
+<span class="font-body-md text-body-md font-semibold">Measuring Volumetrics</span>
+</div>
+<div class="border-l-2 border-zinc-200 pl-4 hover:border-zinc-400 transition-colors">
+<span class="font-label-caps text-label-caps text-zinc-400 block">PART II</span>
+<span class="font-body-md text-body-md text-zinc-500">Legal Standard Variations</span>
+</div>
+<div class="border-l-2 border-zinc-200 pl-4 hover:border-zinc-400 transition-colors">
+<span class="font-label-caps text-label-caps text-zinc-400 block">PART III</span>
+<span class="font-body-md text-body-md text-zinc-500">Impact on Valuation</span>
+</div>
+</div>
+</aside>
+<article class="col-span-12 md:col-span-8 md:col-start-5 space-y-12">
+<div class="prose prose-zinc max-w-none">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">The Precision of Gross Floor Area</h2>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed mb-8">
+                        Gross Floor Area (GFA) is the foundational metric in architectural planning. It encompasses the total floor area contained within the building envelope, measured to the external face of the external walls. Unlike simple residential "square footage," GFA calculation requires a rigorous engineering approach to vertical voids.
+                    </p>
+<div class="bg-surface-container-highest p-12 my-12 border-l-4 border-primary">
+<blockquote class="font-display text-[28px] text-primary italic leading-tight">
+                            "In architectural precision, space is not just what you walk on; it is the volume that remains when the structure is subtracted."
+                        </blockquote>
+<cite class="block mt-4 font-label-caps text-label-caps text-secondary">— Lead Engineer, Architecton</cite>
+</div>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                        Common misconceptions arise in the treatment of "voids" and "mezzanines." For instance, a double-height ceiling in a living room is counted as GFA only on the level where the floor plate exists. However, for structural load and thermal performance calculations, the total volume must be accounted for as "Disclosed Air Space."
+                    </p>
+<div class="grid grid-cols-2 gap-8 mt-12">
+<img class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="ultra modern interior with high ceilings and floor-to-ceiling windows showing precise architectural lines and natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrIn_ZI5dlHjBLXDKuxRfz4d_Lkkaa-0LOSyaOKuc1XyCVdWi5H4ScEdeLQooo45HJHsii6Pwmqi4j8o30GqmVxoF6PH0vuvbrVbqnEZbSBLSYA3awjw1FZpE1yr9t1A28qPh2QyxFO8Dm13AMphqRwUTJoG1uTGQ8SwkRVehFrZe11fV98CjKoNYdf74fttcS-FWXQhnhc47mQHBlCSsrHee_u5YN7Ca1-gzv6sBrVIC_3cIPbaxeTfwT-Hm7B30VX0DtXiz6Qh7K"/>
+<img class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="architectural detail of a minimalist concrete staircase with sharp shadows and geometric precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk7tFQDXY1Nbl2bw0kMErACgbusxUXgxhe4RCoVD-np6l_FE-hcqrUGsH0lcdispELN8dRUm3R8M3V0K9e45Vl8XFbpY-Vau6uFOK4Pa4Tj8flnXlLaL86AuVuUQLttlyzkbOICrfGH3brbgASy5quqAurkVCJ2BNwr_htmyF-5gcmeWSJIrjw_dvEGGh46FlZBPmPPRzNFOEXjo28aNgxyBYfKZhxk8JUiLLXlGbaNQH3_l2LpLdlrHI0m_LQxsIbSpqf0YT4vfc8"/>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+{% endblock content %}

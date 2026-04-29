@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block body_class %}antialiased{% endblock %}
+
+{% block content %}
+<!-- Top Navigation -->
+
+<!-- Hero Section -->
+<header class="pt-48 pb-24 px-12 max-w-7xl mx-auto grid grid-cols-12 gap-grid-gutter">
+<div class="col-span-12 md:col-span-8">
+<span class="font-label-caps text-label-caps text-on-secondary-container uppercase tracking-[0.2em] mb-6 block">Financing Your Legacy</span>
+<h1 class="font-display text-display text-primary leading-none mb-8">Structural precision in every investment.</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+                We bridge the gap between architectural vision and financial reality. Our curated lending partnerships ensure your project is built on a foundation of fiscal stability.
+            </p>
+</div>
+</header>
+<!-- Calculator Section -->
+<section class="pb-section-gap px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-12 gap-grid-gutter items-start">
+<!-- Calculator Widget -->
+<div class="col-span-12 md:col-span-5 bg-surface-container-lowest p-10 subtle-border shadow-sm">
+<h3 class="font-headline-md text-headline-md text-primary mb-10">Mortgage Estimator</h3>
+<div class="space-y-8">
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-3">Loan Amount ($)</label>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 focus:border-primary focus:ring-0 font-stats-num text-headline-md outline-none transition-all" type="text" value="1,250,000"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-3">Amortization Period (Years)</label>
+<div class="flex gap-4">
+<button class="flex-1 py-3 px-4 subtle-border font-label-caps text-label-caps hover:bg-primary-container hover:text-white transition-all">15 YR</button>
+<button class="flex-1 py-3 px-4 bg-primary-container text-white font-label-caps text-label-caps">30 YR</button>
+<button class="flex-1 py-3 px-4 subtle-border font-label-caps text-label-caps hover:bg-primary-container hover:text-white transition-all">OTHER</button>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-3">Interest Rate (%)</label>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 focus:border-primary focus:ring-0 font-stats-num text-headline-md outline-none transition-all" type="text" value="4.25"/>
+</div>
+<button class="w-full bg-primary py-5 text-white font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-colors mt-4">
+                        Calculate Repayment
+                    </button>
+</div>
+</div>
+<!-- Breakdown Card -->
+<div class="col-span-12 md:col-span-7 md:pl-12 pt-12 md:pt-0">
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase mb-2 block">Monthly Estimate</span>
+<div class="font-stats-num text-display text-primary-container">$6,148.33</div>
+<p class="font-body-md text-body-md text-secondary mt-4 max-w-md">Estimated principal and interest payment based on current market averages for premium architectural builds.</p>
+</div>
+<div class="grid grid-cols-2 gap-12 border-t border-outline-variant pt-12">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase mb-2 block">Total Interest</span>
+<div class="font-headline-md text-headline-md text-primary">$963,400</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase mb-2 block">Total Cost</span>
+<div class="font-headline-md text-headline-md text-primary">$2,213,400</div>
+</div>
+</div>
+</div>
+<div class="mt-16 p-8 bg-primary-fixed subtle-border">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<h4 class="font-headline-md text-body-lg font-semibold text-primary-container mb-1">Architecton Preferred Rates</h4>
+<p class="text-on-primary-fixed-variant text-sm">Clients of Architecton Construction gain access to exclusive tier-one financing packages through our institutional partners.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Partner Banks Section -->
+<section class="bg-surface-container py-section-gap px-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Our Lending Network</h2>
+<p class="font-body-lg text-body-lg text-secondary">We partner exclusively with institutions that understand the unique valuation and construction milestones of high-end architectural projects.</p>
+</div>
+<div class="font-label-caps text-label-caps text-primary border-b border-primary pb-2 uppercase tracking-widest cursor-pointer hover:opacity-70 transition-opacity">
+                    View Compliance Docs
+                </div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-outline-variant subtle-border overflow-hidden">
+<div class="bg-white p-12 flex flex-col items-center justify-center group">
+<div class="h-16 w-full flex items-center justify-center mb-6 grayscale group-hover:grayscale-0 transition-all">
+<img alt="" class="h-10 object-contain" data-alt="minimalist professional logo for a high-end financial institution in monochromatic green tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdezvZcQmyjM8LBB7FFPpOLwmmg8SlTbuM0ghB4vcQAk_3gNwpdFo5tM4yOoqmq23wvG0bkPyi4q0Llbb1LOWPMqRqNIwPgUBUV9NpjMw2umvktpr4lkXdUDVQDUnkviKJ77qiU1W0riSvRNOzXfinymtEiQqoO2SRfXIo690aKX3cCD4TcH5Cj4LeQ9J7P_EXyDBahTCtgFizbVaHErywgMUBw3sTTTcsxbFlLxDyoMfvzHd_RnLJfGl-8rAp3-kmW5qhnA_8b6pi"/>
+</div>
+<span class="font-label-caps text-[10px] text-zinc-400 uppercase tracking-widest">Private Wealth</span>
+</div>
+<div class="bg-white p-12 flex flex-col items-center justify-center group">
+<div class="h-16 w-full flex items-center justify-center mb-6 grayscale group-hover:grayscale-0 transition-all">
+<img alt="" class="h-10 object-contain" data-alt="professional corporate bank logo with clean serif typography and structural icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC13Tpj5s1b4YQw4ifdrKSs_qokKGcXPFjjXDJdJJGljGEQzenYOB6qrSK_WmPr7BAebrHh6rTwC42GKTRa0M6C3nsl-DZOS0biwyQVfjLSgmAblNvaNkXPxRH2EFapQZEKLF1Er_PSo5Q8YrQ7mEmuVfO8t7uCt9Pg24QXCULaARrjA8A33b19DudwQyclD_7_9dBlZELu4AYTHxpQdrJFS0YtXVfCom0ePHQMKth1weWvN0OaOz66FxnszXwPQLUR32Ni7ZFNCcBw"/>
+</div>
+<span class="font-label-caps text-[10px] text-zinc-400 uppercase tracking-widest">Construction Loans</span>
+</div>
+<div class="bg-white p-12 flex flex-col items-center justify-center group">
+<div class="h-16 w-full flex items-center justify-center mb-6 grayscale group-hover:grayscale-0 transition-all">
+<img alt="" class="h-12 object-contain" data-alt="global banking logo featuring a clean red and white hexagram mark and bold sans-serif text" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuqwh2DyIn8j36L7IBeUv0QX39Y23QLRFtZXHoLOAO_92z09C0Ejxytnrxjk5BFfLYARtLmM2WeH0WRY_ddL8ix0HUkpPM-Thm69rCWIt4MzNjBk0eDfDayPauzGjqO25Ipi3aoDrMgB6e3XG6EZaM47r5ASWgbeP_I2rMUGPIuAac2tn8vwquGgMwCqObsW0_zduGbP3nQOKqMNNQkhlAVTgXLuKoR6wGZtt25q9v80p0ZA7K7bQmhQSTihV7K5rNbzIN5moh2W0I"/>
+</div>
+<span class="font-label-caps text-[10px] text-zinc-400 uppercase tracking-widest">International Credit</span>
+</div>
+<div class="bg-white p-12 flex flex-col items-center justify-center group">
+<div class="h-16 w-full flex items-center justify-center mb-6 grayscale group-hover:grayscale-0 transition-all">
+<img alt="" class="h-8 object-contain" data-alt="prestigious investment bank logo with sophisticated blue and black typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_iLObSMGoMhMraMyfa-HZnJjRz1CfQlDUXgA7KmN4IrdC8Da1KoLLaFJ4YpVKjf4uqftvsJZUOP_tYKSriwJjxa-CzYXCoesVSZKV5wRCVM18IB-4CknmQvuT9dEE_FYKLRQuc6XprpKeHuDnQVtqcrd-PdtC3yLEEQljZJgEI1HmdV0o3KHd2WOTylPgi67uiTwB53_Lr5JINm0nFJlElj40XgPYqhVk1hn8hPob1YuPdyB00pWSnJ7GOjWbpF4Kld4C1kyz4Hy6"/>
+</div>
+<span class="font-label-caps text-[10px] text-zinc-400 uppercase tracking-widest">Asset Management</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Anchor Section -->
+<section class="h-[600px] relative overflow-hidden">
+<img alt="" class="w-full h-full object-cover" data-alt="interior of a modern luxury house with concrete walls, floor to ceiling windows, and minimalist furniture reflecting precision and airiness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwAfouFFXxIaX4USDtAvVbzvMRLw7_KZShF-e9f760OA_ANBUVkuMcJw-KV7t4KIvr8bovhvkyg7z2_vpaEzPhLXWYGFTmPVS0efn0ikfsmO1iqKCqHTgyIjpAzEv9gGRBDUhGI1El2mGdWLCsi0qQ2N3CrpUla3DdbofgpOzXetWkot-BPzwRM5OG-66bfU595Vfor4ismr-8hHPt8ks7vz8QOT4K68pJMzp4NaLixys1lJbhq5hJjjhJJOcK73Scx-jCzkM6B2YF"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-multiply"></div>
+<div class="absolute inset-0 flex items-center justify-center text-center px-12">
+<div class="max-w-3xl">
+<h2 class="font-display text-headline-lg text-white mb-8">Your vision, structurally sound.</h2>
+<button class="bg-white text-primary px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-zinc-100 transition-colors">Start Financing Application</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+{% endblock content %}

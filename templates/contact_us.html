@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block html_class %}scroll-smooth{% endblock %}
+
+{% block content %}
+<!-- Top Navigation Bar -->
+
+<main class="pt-40">
+<!-- Hero Contact Section -->
+<section class="px-12 max-w-7xl mx-auto mb-section-gap">
+<div class="grid grid-cols-12 gap-grid-gutter">
+<div class="col-span-12 md:col-span-8">
+<span class="font-label-caps text-label-caps text-on-secondary-container uppercase mb-4 block">Connect with our Studio</span>
+<h1 class="font-display text-display text-primary mb-12">Building your vision begins with a conversation.</h1>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-grid-gutter mt-12 items-start">
+<!-- Address & Information -->
+<div class="col-span-12 md:col-span-4 space-y-16">
+<div>
+<h3 class="font-label-caps text-label-caps text-secondary uppercase mb-6">Headquarters</h3>
+<p class="font-headline-md text-headline-md text-primary">
+                            742 Fifth Avenue<br/>
+                            Floor 12, Manhattan<br/>
+                            New York, NY 10019
+                        </p>
+</div>
+<div class="space-y-8">
+<div>
+<h3 class="font-label-caps text-label-caps text-secondary uppercase mb-2">General Inquiries</h3>
+<p class="font-body-lg text-body-lg text-primary">+1 (212) 555-0198</p>
+<p class="font-body-md text-body-md text-secondary">studio@architecton.com</p>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-secondary uppercase mb-2">Press &amp; Media</h3>
+<p class="font-body-lg text-body-lg text-primary">+1 (212) 555-0244</p>
+<p class="font-body-md text-body-md text-secondary">press@architecton.com</p>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-secondary uppercase mb-2">Careers</h3>
+<p class="font-body-lg text-body-lg text-primary">+1 (212) 555-0312</p>
+<p class="font-body-md text-body-md text-secondary">talent@architecton.com</p>
+</div>
+</div>
+</div>
+<!-- Minimal Contact Form -->
+<div class="col-span-12 md:col-span-7 md:col-start-6 bg-surface-container-lowest p-12 lg:p-20 border border-zinc-200/50">
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-secondary uppercase">Full Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 font-body-lg text-primary focus:border-primary transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-secondary uppercase">Email Address</label>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 font-body-lg text-primary focus:border-primary transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-secondary uppercase">Subject</label>
+<select class="w-full bg-transparent border-b border-outline-variant py-4 font-body-lg text-primary focus:border-primary transition-all appearance-none">
+<option>Residential Project Inquiry</option>
+<option>Commercial Development</option>
+<option>Interior Design Consultation</option>
+<option>Sustainable Retrofitting</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-secondary uppercase">Project Brief</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant py-4 font-body-lg text-primary focus:border-primary transition-all resize-none" placeholder="Tell us about your architectural vision..." rows="4"></textarea>
+</div>
+<div class="pt-8">
+<button class="w-full bg-primary text-on-primary py-6 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-all" type="submit">
+                                Submit Inquiry
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-[600px] bg-zinc-200 relative overflow-hidden">
+<img alt="Map" class="w-full h-full object-cover grayscale opacity-80" data-alt="Minimalist grayscale satellite view of Manhattan streets with architectural geometry and soft shadows" data-location="Manhattan, New York" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB4XZmG5dR-0oilf0S-HALvLS3HBQtiH1s0e_gCROMRoxbD38MvoX1KCdzmkOr2Sq5choMm1gfN3pfJECuJzE1fYe83MbB0ShCxDQWxAwKYE63edb0OsSMhTo_M4yePE6ediIrTcJuVeCfWFIi9my4OzxGjEAmx4zQEVH5r5KAg4sDioSgxZ5GAELmhZHa8TU-5EcnndH9ncUBRCkYchY82mJS8qTQ1VtwlTb9Os-RFHRTrzNS2ReXE2aKnl9CezcAkJo69Y9ZlP1o"/>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="w-12 h-12 bg-primary flex items-center justify-center rounded-full shadow-2xl">
+<span class="material-symbols-outlined text-white" data-icon="location_on" data-weight="fill">location_on</span>
+</div>
+</div>
+</section>
+<!-- Gallery / Aesthetic Divider -->
+<section class="px-12 py-section-gap max-w-7xl mx-auto">
+<div class="grid grid-cols-12 gap-grid-gutter items-center">
+<div class="col-span-12 md:col-span-5 mb-12 md:mb-0">
+<img alt="Architecture Office" class="w-full h-[500px] object-cover" data-alt="Interior of a high-end minimalist architecture studio with large windows, drawing tables, and concrete walls in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuISsnlp97BdEZ_27H5syzy0yuF9azCIr7n4Z8n9OzyBQ5oHK0CQEAWQgbZLYB9jddSCiHp4iK2-Ie4pc6BMYRVx--7_4i2n84uTDJVKyxaYzDk-70EkOFe7ZpV1nUAwuxkUwlmIkRXU6uazgX_XMJf39afUJTj-_viaTSYwZwt5viltRkuic2jQ0G705DQrFl6oWuqWvR8m6fahbcywd9jwMDFIy1dEFzHBY3w3yuijQ_ukzYIx2Xj1gjtNUwMXFffHFfIthS3hvo"/>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Visit our sanctuary of precision.</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-12">Our Manhattan studio is more than an office; it's a living example of our architectural philosophy. We welcome clients by appointment to explore material libraries and review structural models.</p>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<span class="font-body-md text-body-md text-primary">Monday — Friday: 09:00 — 18:00</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+{% endblock content %}

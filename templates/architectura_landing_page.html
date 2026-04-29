@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Top Navigation -->
+
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Ultra-modern minimalist concrete villa with floor-to-ceiling glass walls at dusk, warm interior lighting reflecting on a sleek infinity pool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOt4KR7gKNBS3rKUCBPTNXirEVVjBpt10khCqPpPWDUE1VuOmbFDw230A_13-tyT-fTp2ncQxdTJgrEObEOWc-5TE_WZs2NNc3HDkdvwlYaLkyMrBalTWglXEpp60IUWJZLBHi1s9f2ox2heyYRO5G2tiYrdUaRX0FAi4swUYTrvgUCeya5t8KQy6ADiwcDxH8rz9iL_rWt6B3Pvy8YVUxCPWTLkBlnhJKQcfBQJ8JkeJW5DReI3T7rsO0O9_jdGFAi5hH2WTPCALb"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#00261a]/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto w-full px-12">
+<div class="max-w-3xl">
+<h1 class="font-display text-white text-[90px] leading-[1.0] mb-8">Modern Living<br/>Redefined</h1>
+<p class="font-body-lg text-white/80 max-w-lg mb-12">Engineering-led architectural solutions for the discerning elite. We craft spaces that balance structural integrity with understated luxury.</p>
+<div class="flex gap-6">
+<button class="bg-[#0F3D2E] text-white font-label-caps px-10 py-5 uppercase tracking-[0.2em] text-[12px] flex items-center gap-4 group">
+                            View Projects
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border border-white text-white font-label-caps px-10 py-5 uppercase tracking-[0.2em] text-[12px] hover:bg-white/10 transition-all">Our Story</button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 right-12 z-10 flex flex-col items-end text-white/50 font-label-caps">
+<span class="text-[10px] tracking-[0.4em] mb-2 uppercase">Current Project</span>
+<span class="text-white text-[14px] tracking-[0.2em] uppercase">The Glass Pavilion, 2024</span>
+</div>
+</section>
+<!-- Filter Section -->
+<section class="max-w-[1440px] mx-auto px-12 py-12">
+<div class="flex flex-wrap items-center gap-4">
+<div class="font-label-caps text-[#0F3D2E]/40 text-[10px] uppercase tracking-widest mr-4">Filter By</div>
+<button class="bg-primary-container text-white px-6 py-2 rounded-full font-label-caps text-[11px] uppercase tracking-wider">Area: All</button>
+<button class="border border-outline-variant text-secondary px-6 py-2 rounded-full font-label-caps text-[11px] uppercase tracking-wider hover:bg-surface-container transition-all">Floors</button>
+<button class="border border-outline-variant text-secondary px-6 py-2 rounded-full font-label-caps text-[11px] uppercase tracking-wider hover:bg-surface-container transition-all">Material</button>
+<button class="border border-outline-variant text-secondary px-6 py-2 rounded-full font-label-caps text-[11px] uppercase tracking-wider hover:bg-surface-container transition-all">Style</button>
+<div class="ml-auto flex gap-4">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary">grid_view</span>
+<span class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary">view_list</span>
+</div>
+</div>
+</section>
+<!-- Project Catalog Grid -->
+<section class="max-w-[1440px] mx-auto px-12 pb-40">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-y-20 gap-x-12">
+<!-- Project Card 1 -->
+<div class="group cursor-pointer project-card">
+<div class="relative overflow-hidden aspect-[4/5] mb-8 bg-surface-container-highest">
+<img class="project-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Sleek white minimalist villa with large geometric windows and a flat roof, surrounded by pine trees under a clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgh_m1hJEjc2iJJFuJbg8RRMGxOlTRxnGrXvL6cBMxr_cgFR9URkOEgbuCZwGyJCxZ-Uwtif0iOAZ15aU7zLvkii7KQE-hwtx0Ca3K5nMXZzz88js3dmGvnl29pKivPV550chAQQkLZ_MLWoFCOMIHfWMXncacwwudDw5nKNloqagYH_NIH2zCdbDlR9-3n4qrq064b05wl0uaKoCnCvmZWdasUIfrAFoPxtmy-bnzKcPxL5Y_MPIwMaFI_So9dKeBEKbiU5S0ilzg"/>
+<div class="absolute top-6 left-6 bg-white/90 px-4 py-1 font-label-caps text-[10px] uppercase tracking-widest">New</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-[#0F3D2E] mb-1">Villa Nordica</h3>
+<div class="flex gap-4 text-outline font-label-caps text-[10px] uppercase tracking-[0.1em]">
+<span>150 m²</span>
+<span>2 Floors</span>
+<span>3 Rooms</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-stats-num text-[24px] text-[#0F3D2E] leading-none">$250,000</div>
+<div class="font-label-caps text-[9px] text-outline uppercase tracking-widest">Base Price</div>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group cursor-pointer project-card">
+<div class="relative overflow-hidden aspect-[4/5] mb-8 bg-surface-container-highest">
+<img class="project-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Modern dark wood and glass home at night with glowing interior lighting and reflection on a wet driveway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV1bBQdeGIoBHTYClRD3gN-9-Jk33GZXjfNLst5xt-MKj63ymR07Ec9FHIZWHC0rlhsbEEm1XqYwnLoQJsqRYMQmK_xzvHbCMLuw4mJXb0Z89Qo2tYF7u8cQ3PCeMi9tESYieynajiTSSzgs3N96b3mq0yWCTtOUiZYZI6CO9D8GkGAIqlf5RC8lr-F7T8hKtZ-M0h3ZXFhc8w4RiG7z2pHe9UgkqYyQwiWoCk1CN_oGSgL0JU-jKVnElr7ZQf8_gKei61hRXMLivO"/>
+<div class="absolute top-6 left-6 bg-white/90 px-4 py-1 font-label-caps text-[10px] uppercase tracking-widest">New</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-[#0F3D2E] mb-1">Canyon Residence</h3>
+<div class="flex gap-4 text-outline font-label-caps text-[10px] uppercase tracking-[0.1em]">
+<span>210 m²</span>
+<span>1 Floor</span>
+<span>4 Rooms</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-stats-num text-[24px] text-[#0F3D2E] leading-none">$420,000</div>
+<div class="font-label-caps text-[9px] text-outline uppercase tracking-widest">Base Price</div>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group cursor-pointer project-card">
+<div class="relative overflow-hidden aspect-[4/5] mb-8 bg-surface-container-highest">
+<img class="project-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Contemporary concrete house with cantilevered upper floor over a stone courtyard, minimalist landscaping with a single olive tree" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDi_lfyPBJdKeqDKw6Mmb4z9mYeHnhVUZAavd5RYuCe0yUi3xmm4kxtKHwDcd9xWFSBWzYaiYKchDdenbQPJJK_cydYfgl9kmcXT4gqfJyDlLkU59S1HZ_-sh8EHgubsA5BnJHW02YLOnVeZX-MDeK6jH1-2c3yh9aD9STQde2Rv7qP1diGg1JjNEIS3pi1QSEGUjfm-PhFLawgjQrXRPyx1LoHC3VEd4fRzhDYO3Fip7aJTurwRRW1u1p7mYV9VBT-th-5i_I9-nC"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-[#0F3D2E] mb-1">Monolith House</h3>
+<div class="flex gap-4 text-outline font-label-caps text-[10px] uppercase tracking-[0.1em]">
+<span>180 m²</span>
+<span>2 Floors</span>
+<span>3 Rooms</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-stats-num text-[24px] text-[#0F3D2E] leading-none">$315,000</div>
+<div class="font-label-caps text-[9px] text-outline uppercase tracking-widest">Base Price</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Preview Section (Our Legacy) -->
+<section class="bg-surface-container py-[160px]">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-12 gap-grid-gutter items-end mb-[80px]">
+<div class="col-span-12 md:col-span-6">
+<span class="font-label-caps text-[#0F3D2E]/40 uppercase tracking-[0.3em] block mb-6">Execution &amp; Precision</span>
+<h2 class="font-display text-[#0F3D2E] text-[64px] leading-tight">Our Legacy</h2>
+</div>
+<div class="col-span-12 md:col-span-6 md:text-right">
+<a class="font-label-caps text-[#0F3D2E] uppercase tracking-[0.2em] border-b-2 border-[#0F3D2E] pb-2 hover:opacity-70 transition-opacity" href="#">
+                            View Full Portfolio
+                        </a>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-8 aspect-[16/9] bg-white overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Close-up architectural detail of a brutalist concrete staircase with sharp shadows and geometric precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1vitEEmg19cm9FA7m2GcUfLtT7zIy3LV3HVrI247WzmsU4u6OaX3E-FErryHdLtI_-3BO-io1LmRJrQrY2M8FaluTuShRENOhvi0c6qBK4ms_oFRSrtb4uBVnyy37IVXx4gB_4HMpLlJva38S1TTMQC9pUqIfVLw61GG0HZycEH2i7VlpsQyXrjC61Zc6g3Xev_5FUQd7RcpX8ynN63104cEDoJ2YRi4J9Dge1ozuvwXj5NpUNdoef4jzTOYLiMwUpUNmt_fTdFFx"/>
+</div>
+<div class="col-span-12 md:col-span-4 flex flex-col justify-between p-8 border border-outline-variant">
+<div>
+<div class="font-stats-num text-[64px] text-[#0F3D2E] mb-4">120+</div>
+<p class="font-body-md text-secondary uppercase tracking-widest text-[12px]">Completed Private Estates Globally</p>
+</div>
+<div class="mt-20">
+<div class="font-stats-num text-[64px] text-[#0F3D2E] mb-4">24</div>
+<p class="font-body-md text-secondary uppercase tracking-widest text-[12px]">Architectural Excellence Awards</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 aspect-square bg-white overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Modern kitchen interior with black marble waterfall island and integrated cabinetry in a minimalist high-end home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw2eI7s7YiEHou5rdFxqZ6MYJYEvA-9OvcKTF5hzywRnSicGKvJPAaX1brR5POqmmvk_beczOP5VuddSkEuJQzUWaOeiWAlC1oSjsO6s3mQwhvOU2szuEb97rBDZzWc4abY3E2NZmxIFCeWnIRNm8mcN7ZtDcUBPgLna7yDdm695LNLF1APkbcxtMVoTEBGPgm1RhEJ4xQOjTRHe7GuvyRwX8frYZup_DoeBAQCuqcRzznSLSyK8KoJ_QuPykBh0IabZXOpWBDc6qT"/>
+</div>
+<div class="col-span-12 md:col-span-8 aspect-[16/7] bg-white overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="A collection of luxury residential properties designed with a cohesive minimalist architectural language" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNr8YYgejufkjtRN5aIzLNdAmt04dGLLJcpB9of4zcZys139W-zd63iLZsM9uSOg5CrDTI5F-RDnqaLAsuFQvkID5LilQ2QvmDqOXx0Opigglv6Ygc7accHyMrhrQOS75GfSy4E2fbbuavP-U13CVv5Pwb-VIlhI8j3WNMzeLh5IvZS_aAoBIC2MjGt4nk5LpJfvPdC26iCjJNfUtEzIs5V6IA3_0_D0AQ6FnaJQ9IqjddcfSt_eYaYdjxPmsb-z08t7_PcznShFBx"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-[1440px] mx-auto px-12 py-[160px] text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-display text-[72px] text-[#0F3D2E] leading-tight mb-12">Building your vision with architectural precision.</h2>
+<button class="bg-[#0F3D2E] text-white font-label-caps px-16 py-6 uppercase tracking-[0.3em] text-[14px] hover:scale-105 transition-transform">
+                    Start Your Project
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+{% endblock content %}
+
+{% block footer %}
+<footer class="bg-[#0F3D2E] dark:bg-zinc-950 w-full mt-[160px] text-white">
+<div class="flex flex-col md:flex-row justify-between items-end px-12 py-16 w-full max-w-[1440px] mx-auto">
+<div class="flex flex-col items-start w-full md:w-auto mb-12 md:mb-0">
+<div class="text-2xl font-black text-white mb-8">ARCHITECTURA</div>
+<div class="flex flex-col gap-3 font-['Space_Grotesk'] text-[12px] tracking-[0.1em] uppercase">
+<a class="text-white/60 hover:text-white transition-opacity duration-300" href="#">Privacy Policy</a>
+<a class="text-white/60 hover:text-white transition-opacity duration-300" href="#">Terms of Service</a>
+<a class="text-white/60 hover:text-white transition-opacity duration-300" href="#">Cookie Policy</a>
+</div>
+</div>
+<div class="w-full md:w-auto text-right">
+<p class="font-['Space_Grotesk'] text-[12px] tracking-[0.1em] uppercase opacity-40">
+                    © 2024 ARCHITECTURA PREMIER CONSTRUCTION. ALL RIGHTS RESERVED.
+                </p>
+</div>
+</div>
+</footer>
+{% endblock footer %}

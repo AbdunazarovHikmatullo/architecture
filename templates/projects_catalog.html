@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% block body_class %}antialiased{% endblock %}
+
+{% block content %}
+<!-- TopNavBar -->
+
+<main class="pt-32 pb-40 px-12 max-w-screen-2xl mx-auto">
+<!-- Header Section -->
+<header class="mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-on-secondary-container mb-4 block">CATALOGUE 2024</span>
+<h1 class="font-headline-lg text-headline-lg text-primary mb-6">Architectural Excellence in Every Detail.</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+            Explore our curated collection of residential structures, where precision engineering meets minimalist luxury. Each project is a testament to spatial integrity.
+          </p>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<span class="font-stats-num text-stats-num">48</span>
+<span class="font-label-caps text-label-caps uppercase leading-tight">ACTIVE<br/>PROJECTS</span>
+</div>
+</div>
+</header>
+<!-- Filter Section -->
+<section class="mb-16">
+<div class="flex flex-wrap gap-grid-gutter items-center border-b border-outline-variant pb-8">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Area</span>
+<div class="flex gap-2">
+<button class="px-5 py-2.5 bg-primary text-on-primary font-label-caps text-label-caps">ALL</button>
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">150-250m²</button>
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">250m²+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Floors</span>
+<div class="flex gap-2">
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">1 FLOOR</button>
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">2 FLOORS</button>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Material</span>
+<div class="flex gap-2">
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">CONCRETE</button>
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">TIMBER</button>
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">GLASS</button>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Style</span>
+<div class="flex gap-2">
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">MODERN</button>
+<button class="px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">MINIMALIST</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid Layout -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-24 gap-x-12">
+<!-- Card 1 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-dim relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern brutalist concrete villa with large floor-to-ceiling glass windows at sunset with warm interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcG9gMy-Ow3Etq0dJfoU4BLdooSMxEVzNc0-AC1F-FbHK8Aw4EbeTjjoPsV5_JSReTAYRE66oJ1QuMEdTdSvyIlFGNmOGvC6ugTqgygmMnxBjIVs3k0SZLEPRx2VMvY82sHEKmhXGpNSvKOAT_NxUTNUl-pC35znhe05MEgGksJtcD6Y1m29Qh4yFy2QwtOmML7e6R04eBB6aDdMOoOD4qM4zXT2zqVwXGWlT6gdyALHzsPScIwerMXF2f4xQl-DeS4zhq85lPBSVl"/>
+<div class="absolute bottom-0 left-0 bg-primary-container text-on-primary-container px-4 py-2 font-label-caps text-label-caps">
+            AVAILABLE
+          </div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">The Obsidian House</h3>
+<span class="font-stats-num text-[24px] text-on-primary-container">$1,240,000</span>
+</div>
+<div class="flex gap-6 border-t border-outline-variant/30 pt-4 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">square_foot</span>
+<span class="font-label-caps text-label-caps">320 M²</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">layers</span>
+<span class="font-label-caps text-label-caps">2 FLOORS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">chair</span>
+<span class="font-label-caps text-label-caps">4 BEDS</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-dim relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist white mediterranean villa with a swimming pool reflecting the architecture under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnct2GxdxIQWNmdPxOxNEGROfsywCtP4TNqhJjlkASAVLowqVt3ntgM4PQjt5mKponXNknj4uxfG9GysIkgVpLZ68pyvO_ZmcBG0-sP495eO-mTx7WyKABg1BGBQxASbha6AmkJ0A9g4XJhZJZXBW3o1XvukQeOUa-QnJt14sqLzn-j8qQCIYoDOmrZe3GI35qhaf1z4tiAEEz2c2jLiHA512YlHUqrz5-cDVlsgxc6RFZGItG7H0HZ5BMCol5xsmCtqTSUrmsd9Cy"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Aether Pavilion</h3>
+<span class="font-stats-num text-[24px] text-on-primary-container">$890,000</span>
+</div>
+<div class="flex gap-6 border-t border-outline-variant/30 pt-4 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">square_foot</span>
+<span class="font-label-caps text-label-caps">210 M²</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">layers</span>
+<span class="font-label-caps text-label-caps">1 FLOOR</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">chair</span>
+<span class="font-label-caps text-label-caps">3 BEDS</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-dim relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Contemporary luxury estate with dark wood cladding and integrated natural rock elements in a forest setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDla8yMpvxjbkUR66yQhNrp59t2TyB1bWIQtL5Dbli0mriBR7T0LyMRTkCJw66VFZxmCXGsHN7wa720ZGUQ5q8aJhGG-Y8nGoU2qTy6D8kSJPx8wbdcxbGQUw_HgrLxTawVfBKRljYIXmGivlvPAGZB1fcDCyxcMD2jyqp5tEEpydRlPrlfbHjGzVWptB2gF68jN7ar6KRrMYwbyjTQyuAFdTRiJET3BKMXJA_8X3KTYLUPuZUMWaWr6N0KTjLKyf204ElWPjUyQWXI"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Monolith Core</h3>
+<span class="font-stats-num text-[24px] text-on-primary-container">$2,100,000</span>
+</div>
+<div class="flex gap-6 border-t border-outline-variant/30 pt-4 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">square_foot</span>
+<span class="font-label-caps text-label-caps">450 M²</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">layers</span>
+<span class="font-label-caps text-label-caps">3 FLOORS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">chair</span>
+<span class="font-label-caps text-label-caps">5 BEDS</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-dim relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Scandinavian style timber house with steep gabled roof and large glass facade overlooking a snowy landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI9tzulP0wBhjKDUHbc6XgichQ7tWoKrbJrfYnL95y5WGhb7MmkD3c_kbPZp291a4nviAxTRZXCeRhaJTUBntFkyt6hRAnoBOOe1MMdrXQ-O9gK8tWzLFID_oE2UYLuzJuUtjND-c4tW6Ij2e57GQo_eGek-P95Os3r_nvN9dwFCC4LyxbpZj8yFoNfMJBV9decz_hHwhPQ1YjhYYw84PmxvtEHHUXwU6KlXOZ36ds7b1paP7MPjYYobr7jhW0XNeTNuBXyQ8fJnLC"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Fjord Retreat</h3>
+<span class="font-stats-num text-[24px] text-on-primary-container">$1,050,000</span>
+</div>
+<div class="flex gap-6 border-t border-outline-variant/30 pt-4 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">square_foot</span>
+<span class="font-label-caps text-label-caps">180 M²</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">layers</span>
+<span class="font-label-caps text-label-caps">2 FLOORS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">chair</span>
+<span class="font-label-caps text-label-caps">3 BEDS</span>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-dim relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modernist white box house with floating terraces and lush tropical gardens in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-DP2a4iS-NPwAQyCLJKbTOFrEkImuqBCHxVmqBGLDOEdUUWys4NG1Xpz0-aHmvxV9SmAKZ8qjmqIGTNsB11vzFGnuEuLZD1TScPWmkP3bgv__NruO-fklBbZ0Qz6bSqzaN-VYQtFdbySF-hnO5UyX1lfgWXgQ5beux0IjBPhXwex_P8VclG0TkQpZWQQVRb0ZVqy3u887S08qqKE8SM5PzCE1pPhlFusvpz8ExvyvKsBnYvEuOXHEVWyMaEKLwS_TDg_SFrWMXSI_"/>
+<div class="absolute bottom-0 left-0 bg-tertiary-container text-on-tertiary-container px-4 py-2 font-label-caps text-label-caps uppercase">
+            SOLD
+          </div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Vista Cube</h3>
+<span class="font-stats-num text-[24px] text-on-primary-container">$1,550,000</span>
+</div>
+<div class="flex gap-6 border-t border-outline-variant/30 pt-4 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">square_foot</span>
+<span class="font-label-caps text-label-caps">280 M²</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">layers</span>
+<span class="font-label-caps text-label-caps">2 FLOORS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">chair</span>
+<span class="font-label-caps text-label-caps">4 BEDS</span>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-dim relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Aerial view of a sprawling modern ranch style house with natural stone walls and extensive outdoor living spaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTEkNVFvqrdVZBpkTV-WnI79czQY8usu5X4iekyWERccEKNpEb1G97Vlt_37XX0L6yE8OhtgDS55wD98aJbZMNuqSf8YYu58mz4jR9_ivxk7nFWn9LxLGM4ttI14S8I-E8mSMYJXADuFfkWi-HjPinCbcip59Uso1wntmcuvAATJ_6pZMv8wrOaR_4j2FCXC_viGABUK5bov7bTSHRQVNEnc2iIK9Fuf-lVx16qi6mZWM90RetpTPu3pxD7TzvEXFyyPdvUTt5sGQ3"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Terra Grande</h3>
+<span class="font-stats-num text-[24px] text-on-primary-container">$3,400,000</span>
+</div>
+<div class="flex gap-6 border-t border-outline-variant/30 pt-4 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">square_foot</span>
+<span class="font-label-caps text-label-caps">620 M²</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">layers</span>
+<span class="font-label-caps text-label-caps">1 FLOOR</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">chair</span>
+<span class="font-label-caps text-label-caps">6 BEDS</span>
+</div>
+</div>
+</article>
+</section>
+<!-- Pagination -->
+<div class="mt-section-gap flex justify-center items-center gap-4">
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="font-label-caps text-label-caps text-primary px-8">PAGE 01 / 04</span>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+{% endblock content %}

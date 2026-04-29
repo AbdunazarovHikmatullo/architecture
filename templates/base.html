@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="{% block html_class %}light{% endblock %}" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>{% block title %}ARCHITECTON{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <script src="{% static 'js/tailwind.config.js' %}"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="font-body-md text-on-surface {% block body_class %}{% endblock %}">
+
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 flex justify-between items-center h-20 px-12">
+  <a href="{% url 'landing_page' %}" class="text-xl font-bold tracking-tighter text-emerald-950 dark:text-emerald-400 no-underline">ARCHITECTON</a>
+  <div class="hidden md:flex items-center gap-10">
+    {% with url_name=request.resolver_match.url_name %}
+
+    <a href="{% url 'projects_catalog' %}"
+       class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-semibold transition-colors duration-300
+              {% if url_name == 'projects_catalog' or url_name == 'project_detail_villa_nordica' or url_name == 'project_comparison' %}text-emerald-900 dark:text-emerald-400 border-b-2 border-emerald-900 dark:border-emerald-400 pb-1{% else %}text-zinc-500 dark:text-zinc-400 hover:text-emerald-950 dark:hover:text-white{% endif %}">Projects</a>
+
+    <a href="{% url 'portfolio_map_view' %}"
+       class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-semibold transition-colors duration-300
+              {% if url_name == 'portfolio_map_view' or url_name == 'portfolio_project_zenith' %}text-emerald-900 dark:text-emerald-400 border-b-2 border-emerald-900 dark:border-emerald-400 pb-1{% else %}text-zinc-500 dark:text-zinc-400 hover:text-emerald-950 dark:hover:text-white{% endif %}">Portfolio</a>
+
+    <a href="{% url 'services_overview' %}"
+       class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-semibold transition-colors duration-300
+              {% if url_name == 'services_overview' %}text-emerald-900 dark:text-emerald-400 border-b-2 border-emerald-900 dark:border-emerald-400 pb-1{% else %}text-zinc-500 dark:text-zinc-400 hover:text-emerald-950 dark:hover:text-white{% endif %}">Services</a>
+
+    <a href="{% url 'about_us' %}"
+       class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-semibold transition-colors duration-300
+              {% if url_name == 'about_us' %}text-emerald-900 dark:text-emerald-400 border-b-2 border-emerald-900 dark:border-emerald-400 pb-1{% else %}text-zinc-500 dark:text-zinc-400 hover:text-emerald-950 dark:hover:text-white{% endif %}">About</a>
+
+    <a href="{% url 'mortgage_financing' %}"
+       class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-semibold transition-colors duration-300
+              {% if url_name == 'mortgage_financing' %}text-emerald-900 dark:text-emerald-400 border-b-2 border-emerald-900 dark:border-emerald-400 pb-1{% else %}text-zinc-500 dark:text-zinc-400 hover:text-emerald-950 dark:hover:text-white{% endif %}">Mortgage</a>
+
+    {% endwith %}
+  </div>
+  <button class="bg-primary-container text-on-primary font-['Space_Grotesk'] uppercase tracking-widest text-xs font-semibold px-8 py-3 hover:bg-primary transition-colors duration-300">Inquire</button>
+</nav>
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+<!-- Footer (light — default) -->
+<footer class="bg-zinc-100 dark:bg-zinc-900 w-full py-20 px-12 border-t border-zinc-200 dark:border-zinc-800">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-end max-w-7xl mx-auto">
+    <div>
+      <div class="text-lg font-bold text-emerald-950 dark:text-white mb-4">ARCHITECTON</div>
+      <p class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 dark:text-zinc-400">
+        © 2024 Architecton Construction. Engineering Precision.
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-8 md:justify-end">
+      <a class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-emerald-900 dark:hover:text-emerald-300 underline underline-offset-4 transition-all duration-200" href="#">Privacy Policy</a>
+      <a class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-emerald-900 dark:hover:text-emerald-300 underline underline-offset-4 transition-all duration-200" href="#">Terms of Service</a>
+      <a class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-emerald-900 dark:hover:text-emerald-300 underline underline-offset-4 transition-all duration-200" href="#">Sustainability</a>
+      <a class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-emerald-900 dark:hover:text-emerald-300 underline underline-offset-4 transition-all duration-200" href="{% url 'contact_us' %}">Contact</a>
+    </div>
+  </div>
+</footer>
+{% endblock footer %}
+
+{% block extra_scripts %}{% endblock %}
+</body>
+</html>
